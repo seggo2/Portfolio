@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 92px;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.headerLogo {
+    width: 40px;
+    height: 32px;
+}
+
+.headerMenu {
+    width: 66px;
+    height: 30px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
