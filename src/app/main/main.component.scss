@@ -1,0 +1,43 @@
+.position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainHeadline {
+    font-weight: 800;
+    font-size: 128px;
+    margin-bottom: -40px;
+}
+
+.mainSecondHeadline {
+    font-weight: 700;
+    font-size: 48px;
+    color: #00BC8F;
+}
+
+.line {
+    Width: 628px;
+    border: black solid 3px;
+}
+
+.mainSecondHeadlinePosition {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.positionMail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 364px;
+    margin-left: 6%;
+    margin-right: 6%;
+    font-size: 23px;
+
+    .rotate {
+        transform: rotate(-90deg);
+    }
+}
