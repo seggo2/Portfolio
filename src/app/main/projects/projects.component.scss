@@ -1,0 +1,13 @@
+.portfolioPosition{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h1{
+       font-size: 78px;
+       font-weight: 800; 
+    }
+    p{
+        font-size:23px;
+    }
+}

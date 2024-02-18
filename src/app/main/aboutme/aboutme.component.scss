@@ -1,0 +1,136 @@
+.aboutmePosition {
+    display: flex;
+    justify-content: center;
+    margin-left: 6%;
+    margin-right: 6%;
+    gap: 10px;
+}
+
+.imgContainer {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+
+    .myImg {
+        height: 384px;
+        width: 500px;
+    }
+
+    .directionLeft {
+        Width: 306px;
+        Height: 315px;
+    }
+}
+
+.aboutme {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        font-size: 78px;
+        font-weight: 800;
+    }
+
+    p {
+        font-size: 23px;
+        width: 800px;
+        text-align: center;
+    }
+}
+
+.aboutmeButton {
+    width: 213px;
+    height: 68px;
+    border: 4px solid black;
+    font-size: 23px;
+    cursor: pointer;
+    background-color: #FFFCF3;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+
+
+
+
+
+.mySkills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    Height: 592px;
+    border: 4px solid black;
+}
+
+.positionSkills {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: 100%;
+
+    img {
+        transition: transform 0.2s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .firstFiveSkills {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+
+    }
+
+    .secondFiveSkills {
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+}
+
+.PositionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 6% !important;
+    margin-right: 6% !important;
+}
+
+.h1Container {
+    display: flex;
+    width: 510px;
+    margin-bottom: -90px;
+    z-index: 998;
+    background-color: #FFFCF3;
+
+    h1 {
+        font-size: 78px;
+        font-weight: 800;
+
+        &:hover {
+            color: darkred;
+        }
+    }
+}
+
+.directionRight {
+    Width: 306px;
+    Height: 315px;
+    margin-left: 8%;
+}
