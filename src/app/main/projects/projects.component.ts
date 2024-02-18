@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
+  isHovered: { [key: string]: boolean } = {};
 
+  onImageHover(value: boolean, projectKey: string): void {
+    this.isHovered[projectKey] = value;
+  }
 }

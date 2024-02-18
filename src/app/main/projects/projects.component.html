@@ -3,33 +3,59 @@
     <p class="fontOverpass">This page is a sample of mywork - please feel free <br> to try them out</p>
 </div>
 
-<div>
-    <div>
-        <img src="" alt="">
-        <div>
-            <h2></h2>
-            <p></p>
+<div class="projectsContainer">
+    <div class="project1">
+        <div (mouseover)="onImageHover(true, 'project1')" (mouseout)="onImageHover(false, 'project1')">
+            <img [src]="isHovered['project1'] ? '/assets/imgs/projects/Screenshot 2024-02-18 192557.png' : '/assets/imgs/projects/Screenshot 2024-02-18 191841.png'"
+                alt="">
+        </div>
+        <div class="projectsDescription">
+            <h2 class="fontSyne , projectsHeading">Join</h2>
+            <h3 class="fontSyne , projectsTools">JavaScript | HTML | CSS</h3>
+            <p class="fontOverpass , projectsText">Task manager inspired by the Kanban System. Create and organize tasks
+                using drag and drop functions, assign users and categories.</p>
+            <div class="buttonContainer "><button class="gitButton">Git hub</button> <button class="testButton">Live
+                    test</button></div>
         </div>
     </div>
-    <div>
-        <img src="" alt="">
-        <div>
-            <h2></h2>
-            <p></p>
+    <div class="project2">
+        <div (mouseover)="onImageHover(true, 'project2')" (mouseout)="onImageHover(false, 'project2')">
+            <img [src]="isHovered['project2'] ? '/assets/imgs/projects/Screenshot 2024-02-18 181914.png' : '/assets/imgs/projects/Pollo.svg'"
+                alt="">
+        </div>
+        <div class="projectsDescription">
+            <h2 class="fontSyne , projectsHeading">EL POLLO LOCO</h2>
+            <h3 class="fontSyne , projectsTools">JavaScript | HTML | CSS | OOP</h3>
+            <p class="fontOverpass , projectsText">A JavaScript-based, object-oriented jump-and-run game. Help Pepe to
+                rescue his wife from the bad chickens.</p>
+            <div class="buttonContainer "><button class="gitButton">Git hub</button> <button class="testButton">Live
+                    test</button></div>
         </div>
     </div>
-    <div>
-        <img src="" alt="">
-        <div>
-            <h2></h2>
-            <p></p>
+    <div class="project3">
+        <div (mouseover)="onImageHover(true, 'project3')" (mouseout)="onImageHover(false, 'project3')">
+            <img [src]="isHovered['project3'] ? '/assets/imgs/projects/Screenshot 2024-02-18 180818.png' : '/assets/imgs/projects/Screenshot 2024-02-18 180557.png'"
+                alt="">
+        </div>>
+        <div class="projectsDescription">
+            <h2 class="fontSyne , projectsHeading">pokedex</h2>
+            <h3 class="fontSyne , projectsTools">JavaScript | HTML | CSS | API</h3>
+            <p class="fontOverpass , projectsText"> Based on the PokéAPI, I have created a simple library that provides
+                and catalogs Pokémon information.</p>
+            <div class="buttonContainer "><button class="gitButton">Git hub</button> <button class="testButton">Live
+                    test</button></div>
         </div>
     </div>
-    <div>
-        <img src="" alt="">
-        <div>
-            <h2></h2>
-            <p></p>
+    <div class="project4">
+        <div (mouseover)="onImageHover(true, 'project4')" (mouseout)="onImageHover(false, 'project4')">
+            <img [src]="isHovered['project4'] ? '/assets/imgs/projects/Screenshot 2024-02-18 192315.png' : '/assets/imgs/projects/Screenshot 2024-02-18 191958.png'"
+                alt="">
+        </div>
+        <div class="projectsDescription">
+            <h2 class="fontSyne , projectsHeading">Portfolio</h2>
+            <h3 class="fontSyne , projectsTools">Angular | TypeScript | SCSS</h3>
+            <p class="fontOverpass , projectsText">An Angular-developed portfolio showcasing personal work.</p>
+            <div class="buttonContainer "><button class="gitButton">Git hub</button></div>
         </div>
     </div>
 </div>
