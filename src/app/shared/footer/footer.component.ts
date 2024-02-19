@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-
+  openGitHub(){
+    window.open('https://github.com/seggo2?tab=repositories', '_blank');
+  }
 }
