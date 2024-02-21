@@ -3,10 +3,10 @@
     <p class="fontOverpass">This page is a sample of mywork - please feel free <br> to try them out</p>
 </div>
 
-<div class="projectsContainer">
-    <div class="project1">
+<div class="projectsContainer" >
+    <div class="project1 , hiddenX" (window:scroll)="onScroll($event, 'project1')">
         <div (mouseover)="onImageHover(true, 'project1')" (mouseout)="onImageHover(false, 'project1')">
-            <img [src]="isHovered['project1'] ? '/assets/imgs/projects/Screenshot 2024-02-18 192557.png' : '/assets/imgs/projects/Screenshot 2024-02-18 191841.png'"
+            <img [src]="isHovered['project1'] ? '/assets/imgs/projects/join2.png' : '/assets/imgs/projects/join.png'"
                 alt="">
         </div>
         <div class="projectsDescription">
@@ -18,9 +18,9 @@
                     test</button></div>
         </div>
     </div>
-    <div class="project2">
+    <div class="project2 , hiddenX" (window:scroll)="onScroll($event, 'project2')">
         <div (mouseover)="onImageHover(true, 'project2')" (mouseout)="onImageHover(false, 'project2')">
-            <img [src]="isHovered['project2'] ? '/assets/imgs/projects/Screenshot 2024-02-18 181914.png' : '/assets/imgs/projects/Pollo.svg'"
+            <img [src]="isHovered['project2'] ? '/assets/imgs/projects/polloIngame.png' : '/assets/imgs/projects/polloFrame.png'"
                 alt="">
         </div>
         <div class="projectsDescription">
@@ -32,11 +32,11 @@
                     test</button></div>
         </div>
     </div>
-    <div class="project3">
+    <div class="project3 , hiddenX" (window:scroll)="onScroll($event, 'project3')">
         <div (mouseover)="onImageHover(true, 'project3')" (mouseout)="onImageHover(false, 'project3')">
-            <img [src]="isHovered['project3'] ? '/assets/imgs/projects/Screenshot 2024-02-18 180818.png' : '/assets/imgs/projects/Screenshot 2024-02-18 180557.png'"
+            <img [src]="isHovered['project3'] ? '/assets/imgs/projects/pokedexIngame.png' : '/assets/imgs/projects/pokedex.png'"
                 alt="">
-        </div>>
+        </div>
         <div class="projectsDescription">
             <h2 class="fontSyne , projectsHeading">pokedex</h2>
             <h3 class="fontSyne , projectsTools">JavaScript | HTML | CSS | API</h3>
@@ -46,9 +46,9 @@
                     test</button></div>
         </div>
     </div>
-    <div class="project4">
+    <div class="project4 , hiddenX" (window:scroll)="onScroll($event, 'project4')">
         <div (mouseover)="onImageHover(true, 'project4')" (mouseout)="onImageHover(false, 'project4')">
-            <img [src]="isHovered['project4'] ? '/assets/imgs/projects/Screenshot 2024-02-18 192315.png' : '/assets/imgs/projects/Screenshot 2024-02-18 191958.png'"
+            <img [src]="isHovered['project4'] ? '/assets/imgs/projects/portfolio-skills.png' : '/assets/imgs/projects/portfolio.png'"
                 alt="">
         </div>
         <div class="projectsDescription">

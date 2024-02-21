@@ -3,9 +3,20 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    animation: slideIn 0.8s ease-out;
 }
 
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
 .mainHeadline {
+    padding-top: 50px;
     font-weight: 800;
     font-size: 128px;
     margin-bottom: -40px;

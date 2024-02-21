@@ -1,14 +1,19 @@
-import { Component } from '@angular/core';
+import { Component,HostListener } from '@angular/core';
+import { AboutmeComponent } from '../aboutme/aboutme.component';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [],
+  imports: [AboutmeComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
+
   isHovered: { [key: string]: boolean } = {};
+  private isInViewport = false;
+  @HostListener('window:scroll', ['$event'])
+
 
   onImageHover(value: boolean, projectKey: string): void {
     this.isHovered[projectKey] = value;
@@ -44,5 +49,21 @@ export class ProjectsComponent {
     }
   }
   
-  
+  onScroll(event: Event, className: string) {
+    event.preventDefault();
+    if (className !== undefined) {
+      const element = document.querySelector(`.${className}`);
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        this.isInViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
+        if (this.isInViewport) {
+          element.classList.remove('hidden');
+          element.classList.add('visible');
+        } else {
+          element.classList.remove('visible');
+          element.classList.add('hidden');
+        }
+      }
+    }
+  }
 }

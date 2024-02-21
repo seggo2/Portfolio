@@ -3,7 +3,6 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
     h1 {
         font-size: 78px;
         font-weight: 800;
@@ -15,7 +14,7 @@
 }
 
 
-.projectsDescription{
+.projectsDescription {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -29,6 +28,7 @@
     flex-direction: column;
     gap: 200px;
     padding-top: 100px;
+    overflow: hidden;
 }
 
 .project1 {
@@ -36,10 +36,13 @@
     align-items: center;
     width: 100%;
     justify-content: space-evenly;
+    opacity: 0;
+    transform: translateX(4000px);
+    transition: opacity 1.5s ease, transform 1s ease;
     img {
         width: 620px;
         height: 393px;
-    }    
+    }
 }
 
 .project2 {
@@ -47,12 +50,14 @@
     align-items: center;
     width: 100%;
     justify-content: space-evenly;
-    flex-direction:row-reverse;
-
+    flex-direction: row-reverse;
+    opacity: 0;
+    transform: translateX(4000px);
+    transition: opacity 1.5s ease, transform 1s ease;
     img {
         width: 620px;
         height: 393px;
-    } 
+    }
 }
 
 .project3 {
@@ -60,11 +65,34 @@
     align-items: center;
     width: 100%;
     justify-content: space-evenly;
-
+    opacity: 0;
+    transform: translateX(4000px);
+    transition: opacity 1.5s ease, transform 1s ease;
     img {
         width: 620px;
         height: 393px;
     }
+}
+
+.visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(4000px);
+}
+
+
+.visibleX {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+.hiddenX {
+    opacity: 0;
+    transform: translateX(4000px);
 }
 
 .project4 {
@@ -73,33 +101,35 @@
     width: 100%;
     justify-content: space-evenly;
     flex-direction: row-reverse;
-
+    opacity: 0;
+    transform: translateX(4000px);
+    transition: opacity 1.5s ease, transform 1s ease;
     img {
         width: 620px;
         height: 393px;
         border: 3px solid black;
     }
-    
+
 }
 
-.projectsTools{
+.projectsTools {
     font-size: 27px;
     font-weight: 700;
     color: darkred;
 }
 
-.projectsHeading{
+.projectsHeading {
     font-size: 37px;
     font-weight: 800;
 }
 
-.projectsText{
+.projectsText {
     font-size: 27px;
     width: 400px;
     text-align: left;
 }
 
-.gitButton{
+.gitButton {
     width: 150px;
     height: 60px;
     border: 4px solid black;
@@ -107,20 +137,21 @@
     cursor: pointer;
     background-color: #FFFCF3;
     transition: transform 0.1s;
-    &:hover{
+
+    &:hover {
         transform: scale(1.1);
         color: darkred;
         font-weight: 800;
     }
 }
 
-.buttonContainer{
+.buttonContainer {
     display: flex;
     align-items: center;
     gap: 50px;
 }
 
-.testButton{
+.testButton {
     width: 150px;
     height: 60px;
     border: 4px solid darkred;
@@ -129,7 +160,8 @@
     cursor: pointer;
     background-color: #FFFCF3;
     transition: transform 0.1s;
-    &:hover{
+
+    &:hover {
         transform: scale(1.1);
         color: darkred;
         font-weight: 800;
