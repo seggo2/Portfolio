@@ -3,8 +3,46 @@
     <div class="contactMargin">
         <h1 class="fontSyne">Say Hi!</h1>
         <div class="postionFormula">
-            <h2 class="fontOverpass">Want to discuss a new project?</h2>
-            <p class="fontOverpass">Say hello! let's discuss and make it happen</p>
+            <div>
+                <h2 class="fontOverpass">Want to discuss a new project?</h2>
+                <p class="fontOverpass">Say hello! let's discuss and make it happen</p>
+            </div>
+
+            <form class="formPosition" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+
+                <input #name="ngModel" minlength="3" [(ngModel)]="contactData.name" name="name" class="formName" type="text"
+                    placeholder="Your name" required>
+
+                @if (!name.valid && name.touched) {
+                <span class="spanMessage , fontSyne">Please enter Name</span>
+                }
+
+                <input #email="ngModel" minlength="10" [(ngModel)]="contactData.email" name="email" class="formEmail" type="email"
+                    placeholder="Your email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+
+                @if (!email.valid && email.touched) {
+                <span class="spanMessage , fontSyne">Please enter email</span>
+                }
+
+                <textarea #message="ngModel" minlength="10" [(ngModel)]="contactData.message" class="formMessage"
+                    type="text" placeholder="Your message" name="textarea" required></textarea>
+
+                @if (!message.valid && message.touched) {
+                <span class="spanMessage , fontSyne">Please enter Message</span>
+                }
+
+
+                <label class="checkbox , fontOverpass"><input required type="checkbox" name="checkbox"
+                    (change)="toggleEditable($event)"  value="value">I've read the <a href="">Privacy policy</a> and agree to the processing of my data
+                    as outlined.</label>
+
+                    @if (!this.contentEditable) {
+                        <span class="spanMessage , fontSyne">Please agree Terms</span>
+                        }
+
+                <button class="formButton">Send message</button>
+            </form>
+
         </div>
     </div>
 </div>
