@@ -10,15 +10,16 @@
 
             <form class="formPosition" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
-                <input #name="ngModel" minlength="3" [(ngModel)]="contactData.name" name="name" class="formName" type="text"
-                    placeholder="Your name" required>
+                <input #name="ngModel" minlength="3" [(ngModel)]="contactData.name" name="name" class="formName"
+                    type="text" placeholder="Your name" required>
 
                 @if (!name.valid && name.touched) {
                 <span class="spanMessage , fontSyne">Please enter Name</span>
                 }
 
-                <input #email="ngModel" minlength="10" [(ngModel)]="contactData.email" name="email" class="formEmail" type="email"
-                    placeholder="Your email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                <input #email="ngModel" minlength="10" [(ngModel)]="contactData.email" name="email" class="formEmail"
+                    type="email" placeholder="Your email" required
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
 
                 @if (!email.valid && email.touched) {
                 <span class="spanMessage , fontSyne">Please enter email</span>
@@ -33,14 +34,15 @@
 
 
                 <label class="checkbox , fontOverpass"><input required type="checkbox" name="checkbox"
-                    (change)="toggleEditable($event)"  value="value">I've read the <a href="">Privacy policy</a> and agree to the processing of my data
+                        (change)="toggleEditable($event)" value="value">I've read the <a href="">Privacy policy</a> and
+                    agree to the processing of my data
                     as outlined.</label>
 
-                    @if (!this.contentEditable) {
-                        <span class="spanMessage , fontSyne">Please agree Terms</span>
-                        }
-
-                <button class="formButton">Send message</button>
+               
+                <span id="terms" class="spanMessage , fontSyne , hide">Please agree Terms</span>
+                
+                <div><button class="formButton">Send message</button> <a href="#tostart"><img class="arrowPosition"
+                    src="/assets/imgs/body/arrow.svg" alt=""></a></div>
             </form>
 
         </div>

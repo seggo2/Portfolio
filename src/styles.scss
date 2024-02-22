@@ -1,3 +1,7 @@
+
+html {
+  scroll-behavior: smooth;
+}
 body{
     margin: 0px;
     background-color: #FFFCF3;
@@ -5,7 +9,18 @@ body{
 }
 
 
+::-webkit-scrollbar {
+  scrollbar-width: thin;
+}
 
+::-webkit-scrollbar-track {
+  background: #FFFCF3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
 
 
 

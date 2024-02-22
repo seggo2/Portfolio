@@ -1,4 +1,17 @@
-<div class="aboutmePosition , hide" (window:scroll)="onScroll($event, 'aboutmePosition')">
+<div id="tostart" class="position">
+    <h1  class="fontSyne , mainHeadline">Frontend <br>Developer</h1>
+    <div class="mainSecondHeadlinePosition">
+        <div class="line"></div>
+        <h2 class="mainSecondHeadline , fontOverpass">Sefa Gür</h2>
+    </div>
+</div>
+
+<div class="positionMail , fontOverpass">
+    <div class="rotate" ngNonBindable><p>Sefa_guer&#64;hotmail.com</p></div>
+    <div><p  id="aboutme">Scroll <br> Down</p></div>
+</div>
+
+<div  class="aboutmePosition , hide" (window:scroll)="onScroll($event, 'aboutmePosition')">
     <div class="aboutme">
         <h1 class="fontSyne">About me</h1>
         <p class="fontOverpass">As a Frontend Developer, I leverage my extensive experience in machine programming to
@@ -9,11 +22,11 @@
     </div>
     <div class="imgContainer">
         <img class="myImg" src="/assets/imgs/body/small_ohne_background.png" alt="">
-        <img class="directionLeft" src="/assets/imgs/body/pfeilLinks.svg" alt="">
-    </div>
+        <img id="skills" class="directionLeft" src="/assets/imgs/body/pfeilLinks.svg" alt="">
+    </div >
 </div>
 
-<div class="PositionContainer , hide" (window:scroll)="onScroll($event, 'PositionContainer')">
+<div  class="PositionContainer , hide" (window:scroll)="onScroll($event, 'PositionContainer')">
     <div class="h1Container">
         <h1 class="fontSyne">My skills</h1>
     </div>
@@ -63,6 +76,6 @@
     </div>
 </div>
 
-<div class="directionRight">
+<div id="portfolio" class="directionRight">
     <img src="/assets/imgs/body/Pfeilrechts.svg" alt="">
 </div>

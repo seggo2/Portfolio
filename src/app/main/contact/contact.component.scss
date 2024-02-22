@@ -113,3 +113,18 @@ h1{
     font-size: 14px;
     color: red;
 }
+
+.arrowPosition{
+    position:absolute;
+    right: 6%;
+    transition: transform 0.3s;
+    &:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
+
+
+.hide{
+    display: none;
+}
