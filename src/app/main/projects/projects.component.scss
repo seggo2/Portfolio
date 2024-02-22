@@ -167,3 +167,13 @@
         font-weight: 800;
     }
 }
+
+.directionLeft{
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    .directionLeftImg{
+        margin-right: 20%;
+    }
+}
