@@ -11,13 +11,9 @@
         <p>Sefa_guer&#64;hotmail.com</p>
     </div>
     <div>
-        <div [@bildAnimation]="animationState">
-            <img src="assets/imgs/animations/scrolldown/Group 3 (1).svg" alt="">
-            <img src="assets/imgs/animations/scrolldown/Group 3 (2).svg" alt="">
-            <img src="assets/imgs/animations/scrolldown/Group 3 (3).svg" alt="">
-            <img src="assets/imgs/animations/scrolldown/Group 3 (4).svg" alt="">
-            <img src="assets/imgs/animations/scrolldown/Group 3 (5).svg" alt="">
-        </div>
+        <div class="animated-arrow" [@bildAnimation]>
+            <img [src]="img[pictureIndex]" />
+          </div>
         <p id="aboutme">Scroll <br> Down</p>
     </div>
 </div>
