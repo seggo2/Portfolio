@@ -6,7 +6,7 @@
 <div class="projectsContainer" >
     <div class="project1 , hiddenX" (window:scroll)="onScroll($event, 'project1')">
         <div (mouseover)="onImageHover(true, 'project1')" (mouseout)="onImageHover(false, 'project1')">
-            <img [src]="isHovered['project1'] ? '/assets/imgs/projects/join2.png' : '/assets/imgs/projects/join.png'"
+            <img [src]="isHovered['project1'] ? 'assets/imgs/projects/join2.png' : 'assets/imgs/projects/join.png'"
                 alt="">
         </div>
         <div class="projectsDescription">
@@ -20,7 +20,7 @@
     </div>
     <div class="project2 , hiddenX" (window:scroll)="onScroll($event, 'project2')">
         <div (mouseover)="onImageHover(true, 'project2')" (mouseout)="onImageHover(false, 'project2')">
-            <img [src]="isHovered['project2'] ? '/assets/imgs/projects/polloIngame.png' : '/assets/imgs/projects/polloFrame.png'"
+            <img [src]="isHovered['project2'] ? 'assets/imgs/projects/polloIngame.png' : 'assets/imgs/projects/polloFrame.png'"
                 alt="">
         </div>
         <div class="projectsDescription">
@@ -34,7 +34,7 @@
     </div>
     <div class="project3 , hiddenX" (window:scroll)="onScroll($event, 'project3')">
         <div (mouseover)="onImageHover(true, 'project3')" (mouseout)="onImageHover(false, 'project3')">
-            <img [src]="isHovered['project3'] ? '/assets/imgs/projects/pokedexIngame.png' : '/assets/imgs/projects/pokedex.png'"
+            <img [src]="isHovered['project3'] ? 'assets/imgs/projects/pokedexIngame.png' : 'assets/imgs/projects/pokedex.png'"
                 alt="">
         </div>
         <div class="projectsDescription">
@@ -48,7 +48,7 @@
     </div>
     <div class="project4 , hiddenX" (window:scroll)="onScroll($event, 'project4')">
         <div (mouseover)="onImageHover(true, 'project4')" (mouseout)="onImageHover(false, 'project4')">
-            <img [src]="isHovered['project4'] ? '/assets/imgs/projects/portfolio-skills.png' : '/assets/imgs/projects/portfolio.png'"
+            <img [src]="isHovered['project4'] ? 'assets/imgs/projects/portfolio-skills.png' : 'assets/imgs/projects/portfolio.png'"
                 alt="">
         </div>
         <div class="projectsDescription">
@@ -60,5 +60,5 @@
     </div>
 </div>
 <div class="directionLeft">
-<img class="directionLeftImg" src="/assets/imgs/body/pfeilLinks.svg" alt="">
+<img class="directionLeftImg" src="assets/imgs/body/pfeilLinks.svg" alt="">
 </div>
