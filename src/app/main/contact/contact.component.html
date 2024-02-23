@@ -8,7 +8,7 @@
                 <p class="fontOverpass">Say hello! let's discuss and make it happen</p>
             </div>
 
-            <form class="formPosition" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+            <form id="contact" class="formPosition" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
                 <input #name="ngModel" minlength="3" [(ngModel)]="contactData.name" name="name" class="formName"
                     type="text" placeholder="Your name" required>

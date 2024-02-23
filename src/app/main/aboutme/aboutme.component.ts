@@ -1,18 +1,50 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener , OnInit ,} from '@angular/core';
+
+import { trigger, state, style, animate, transition } from '@angular/animations';
+
 
 @Component({
   selector: 'app-aboutme',
   standalone: true,
   imports: [],
   templateUrl: './aboutme.component.html',
-  styleUrl: './aboutme.component.scss'
+  styleUrl: './aboutme.component.scss',
+
+  animations: [
+    trigger('bildAnimation', [
+      state('start', style({
+        transform: 'translateX(0)',
+        opacity: 1,
+      })),
+      transition('* => start', [
+        style({
+          transform: 'translateX(100%)',
+          opacity: 0,
+        }),
+        animate('1000ms ease-out'),
+      ]),
+    ]),
+  ],
 })
-export class AboutmeComponent {
+
+export class AboutmeComponent implements OnInit {
+
   private isInViewport = false;
+
   @HostListener('window:scroll', ['$event'])
 
+  animationState = 'start';
 
 
+  ngOnInit(): void {
+    this.starteAnimation();
+  }
+
+  starteAnimation() {
+    setInterval(() => {
+      this.animationState = (this.animationState === 'start') ? 'void' : 'start';
+    }, 2000); 
+  }
 
   onScroll(event: Event, className: string) {
     event.preventDefault();
