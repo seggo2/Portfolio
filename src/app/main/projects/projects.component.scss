@@ -3,6 +3,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
     h1 {
         font-size: 78px;
         font-weight: 800;
@@ -39,6 +40,7 @@
     opacity: 0;
     transform: translateX(4000px);
     transition: opacity 1.5s ease, transform 1s ease;
+
     img {
         width: 620px;
         height: 393px;
@@ -54,6 +56,7 @@
     opacity: 0;
     transform: translateX(4000px);
     transition: opacity 1.5s ease, transform 1s ease;
+
     img {
         width: 620px;
         height: 393px;
@@ -68,6 +71,7 @@
     opacity: 0;
     transform: translateX(4000px);
     transition: opacity 1.5s ease, transform 1s ease;
+
     img {
         width: 620px;
         height: 393px;
@@ -104,6 +108,7 @@
     opacity: 0;
     transform: translateX(4000px);
     transition: opacity 1.5s ease, transform 1s ease;
+
     img {
         width: 620px;
         height: 393px;
@@ -168,12 +173,212 @@
     }
 }
 
-.directionLeft{
+.directionLeft {
     padding-top: 100px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    .directionLeftImg{
+
+    .directionLeftImg {
         margin-right: 20%;
     }
 }
+
+/////////////////////////////////////////////// headline querry//////////////////////////////////////////////////
+
+@media(max-width:550px) {
+    .portfolioPosition {
+        h1 {
+            transition: font-size 0.5s ease;
+            font-size: 30px;
+        }
+
+        p {
+            transition: font-size 0.5s ease;
+            font-size: 18px;
+        }
+    }
+}
+
+@media(max-width:1050px) {
+    .project1 {
+        img {
+            width: 320px;
+            height: 193px;
+        }
+
+        .projectsHeading {
+            transition: font-size 0.5s ease;
+            font-size: 25px;
+        }
+
+        .projectsTools {
+            transition: font-size 0.5s ease;
+            font-size: 20px;
+        }
+
+        .projectsText {
+            width: 100%;
+            transition: font-size 0.5s ease;
+            font-size: 20px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .gitButton {
+            width: 100px;
+            height: 40px;
+            font-size: 20px;
+        }
+
+        .testButton {
+            width: 100px;
+            height: 40px;
+            font-size: 20px;
+
+            &:hover {
+                font-size: 20px;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .project2 {
+        img {
+            width: 320px;
+            height: 193px;
+        }
+
+        .projectsHeading {
+            transition: font-size 0.5s ease;
+            font-size: 25px;
+        }
+
+        .projectsTools {
+            transition: font-size 0.5s ease;
+            font-size: 20px;
+        }
+
+        .projectsText {
+            width: 100%;
+            transition: font-size 0.5s ease;
+            font-size: 20px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .gitButton {
+            width: 100px;
+            height: 40px;
+            font-size: 20px;
+        }
+
+        .testButton {
+            width: 100px;
+            height: 40px;
+            font-size: 20px;
+
+            &:hover {
+                font-size: 20px;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .project3 {
+        img {
+            width: 320px;
+            height: 193px;
+        }
+
+        .projectsHeading {
+            transition: font-size 0.5s ease;
+            font-size: 25px;
+        }
+
+        .projectsTools {
+            transition: font-size 0.5s ease;
+            font-size: 20px;
+        }
+
+        .projectsText {
+            width: 100%;
+            transition: font-size 0.5s ease;
+            font-size: 20px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .gitButton {
+            width: 100px;
+            height: 40px;
+            font-size: 20px;
+        }
+
+        .testButton {
+            width: 100px;
+            height: 40px;
+            font-size: 20px;
+
+            &:hover {
+                font-size: 20px;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .project4 {
+        img {
+            width: 320px;
+            height: 193px;
+        }
+
+        .projectsHeading {
+            transition: font-size 0.5s ease;
+            font-size: 25px;
+        }
+
+        .projectsTools {
+            transition: font-size 0.5s ease;
+            font-size: 20px;
+        }
+
+        .projectsText {
+            width: 100%;
+            transition: font-size 0.5s ease;
+            font-size: 20px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .gitButton {
+            width: 100px;
+            height: 40px;
+            font-size: 20px;
+        }
+    }
+}
+
+
+@media(max-width:700px) {
+    .project1 {
+        flex-direction: column;
+    }
+
+    .project2 {
+        flex-direction: column;
+    }
+
+    .project3 {
+        flex-direction: column;
+    }
+
+    .project4 {
+        flex-direction: column;
+    }
+    .directionLeftImg{
+        height: 200px;
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////

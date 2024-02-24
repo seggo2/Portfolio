@@ -57,3 +57,11 @@
     margin-left: 6%;
     margin-right: 6%;
 }
+
+@media(max-width:370px){
+    .footerContainer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    }

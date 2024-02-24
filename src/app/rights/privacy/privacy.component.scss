@@ -1,0 +1,69 @@
+.positioning {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.background {
+    margin-left: 200px;
+    margin-right: 200px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 20px;
+    transition: font-size 0.5s ease;
+    color: white;
+}
+
+.adress {
+    transition: font-size 0.5s ease;
+    font-size: 24px !important;
+}
+
+h1 {
+    transition: font-size 0.5s ease;
+    font-size: 40px !important;
+    color: blue;
+}
+
+h2 {
+    transition: font-size 0.5s ease;
+    font-size: 35px;
+    color: red !important;
+}
+
+h3 {
+    color: orange;
+}
+
+
+@media(max-width:1000px) {
+    .background {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+
+@media(max-width:350px) {
+    .background {
+        transition: font-size 0.5s ease;
+        font-size: 15px;
+    }
+    
+h1 {
+    transition: font-size 0.5s ease;
+    font-size: 25px !important;
+    color: blue;
+}
+
+h2 {
+    transition: font-size 0.5s ease;
+    font-size: 20px;
+    color: red !important;
+}
+.adress {
+    transition: font-size 0.5s ease;
+    font-size: 20px !important;
+}
+}

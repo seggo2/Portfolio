@@ -160,12 +160,13 @@
 
 @keyframes slideIn {
     from {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
+
     to {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  }
+}
 
 .mainHeadline {
     padding-top: 50px;
@@ -206,6 +207,167 @@
     }
 }
 
-.animated-arrow{
+.animated-arrow {
     height: 100px;
 }
+
+
+@media(max-width:1050px) {
+    .mainHeadline {
+        transition: font-size 0.5s ease;
+        font-size: 80px;
+        margin-bottom: -20px;
+    }
+
+    .mainSecondHeadline {
+        transition: font-size 0.5s ease;
+        font-size: 30px;
+    }
+
+    .line {
+        width: 300px;
+    }
+}
+
+
+////////////////////////////////headline querry/////////////////////////////////////////
+@media(max-width:650px) {
+    .mainHeadline {
+        transition: font-size 0.5s ease;
+        font-size: 50px;
+        margin-bottom: -20px;
+    }
+
+    .mainSecondHeadline {
+        transition: font-size 0.5s ease;
+        font-size: 25px;
+    }
+
+    .line {
+        width: 300px;
+    }
+}
+
+@media(max-width:550px) {
+    .mainHeadline {
+        transition: font-size 0.5s ease;
+        font-size: 35px;
+        margin-bottom: -20px;
+    }
+
+    .mainSecondHeadline {
+        transition: font-size 0.5s ease;
+        font-size: 25px;
+    }
+
+    .line {
+        width: 150px;
+    }
+
+    .position {
+        padding-top: 50px;
+    }
+
+    .positionMail {
+        padding-top: 50px;
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/// 
+/// ////////////////////////////////about me querry/////////////////////////////////////////
+
+@media(max-width:1400px) {
+    .aboutme {
+        h1 {
+            font-size: 40px;
+            font-weight: 800;
+        }
+
+        p {
+            font-size: 15px;
+            word-wrap: break-word;
+            width: 100%;
+            overflow-wrap: break-word;
+        }
+    }
+}
+
+@media(max-width:950px) {
+    .aboutme {
+        h1 {
+            font-size: 30px;
+            font-weight: 800;
+        }
+    }
+
+    .aboutmeButton {
+        width: 130px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .myImg {
+        height: 200px !important;
+        width: 200px !important;
+    }
+
+    .directionLeft {
+        Width: 106px !important;
+        Height: 115px !important;
+    }
+}
+
+@media(max-width:550px) {
+    .aboutmePosition {
+        flex-direction: column;
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/// /// ////////////////////////////////skills querry/////////////////////////////////////////
+
+
+@media(max-width:600px) {
+    .positionSkills {
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .firstFiveSkills {
+        flex-direction: column;
+
+        img {
+            height: 50px !important;
+            width: 50px !important;
+        }
+    }
+
+    .secondFiveSkills {
+        flex-direction: column;
+
+        img {
+            height: 50px !important;
+            width: 50px !important;
+        }
+    }
+
+    .h1Container {
+        width: 200px;
+        margin-bottom: -30px;
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    .directionRight {
+        img {
+            Width: 206px;
+            Height: 215px;
+        }
+    }
+}
+
+//////////////////////////////////////////////////////////////////////
