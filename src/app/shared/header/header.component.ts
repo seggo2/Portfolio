@@ -58,7 +58,7 @@ export class HeaderComponent {
       } else {
         this.pictureIndex = (this.pictureIndex + 1) % this.img.length;
       }
-    }, 300);
+    }, 160);
   }
 
 }

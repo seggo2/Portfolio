@@ -28,6 +28,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 
 export class AboutmeComponent implements OnInit {
   
+  
   private isInViewport = false;
 
   img = ['assets/imgs/animations/scrolldown/Group 3 (1).svg','assets/imgs/animations/scrolldown/Group 3 (2).svg','assets/imgs/animations/scrolldown/Group 3 (3).svg','assets/imgs/animations/scrolldown/Group 3 (4).svg','assets/imgs/animations/scrolldown/Group 3 (5).svg',];

@@ -1,6 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -10,8 +11,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) { }
 
   contentEditable = false;
 
@@ -21,11 +21,11 @@ export class ContactComponent {
     message: "",
   }
 
-  mailTest = true;
+  mailTest = false;
 
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://sefa-guer.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -36,13 +36,11 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    debugger
     if (this.contentEditable == true) {
-      if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      if (ngForm.submitted && ngForm.form.valid) {
         this.http.post(this.post.endPoint, this.post.body(this.contactData))
           .subscribe({
             next: (response) => {
-
               ngForm.resetForm();
             },
             error: (error) => {
@@ -50,19 +48,24 @@ export class ContactComponent {
             },
             complete: () => console.info('send post complete'),
           });
-      } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
-        ngForm.resetForm();
-      }
-    }else{
-      let terms=document.getElementById('terms')
+          ngForm.resetForm();
+        }
+    } else {
+      let terms = document.getElementById('terms')
       terms?.classList.toggle('hide')
     }
   }
+
+
 
   toggleEditable(event: any) {
     if (event.target.checked) {
       this.contentEditable = true;
     }
+  }
+
+
+  routePrivacy() {
+    this.router.navigate(['privacy']);
   }
 }

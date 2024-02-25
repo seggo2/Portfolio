@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-footer',
   standalone: true,
@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
+
+  constructor(private router: Router) { }
+
   openLink(key:string){
     if (key=='1') {
       window.open('https://github.com/seggo2?tab=repositories', '_blank');
@@ -17,4 +20,9 @@ export class FooterComponent {
       window.open('https://www.xing.com/profile/sefa_guer2/web_profiles?expandNeffi=true', '_blank');
     }
   }
+
+  routePrivacy(){
+  this.router.navigate(['privacy']);
+}
+
 }
