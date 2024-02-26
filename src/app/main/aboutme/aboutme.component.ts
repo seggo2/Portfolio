@@ -1,7 +1,7 @@
 import { Component, HostListener , OnInit ,} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { trigger, state, style, animate, transition } from '@angular/animations';
-
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-aboutme',
@@ -28,6 +28,10 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 
 export class AboutmeComponent implements OnInit {
   
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang('en');
+  }
+
   
   private isInViewport = false;
 
