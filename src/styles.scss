@@ -6,7 +6,15 @@ body{
     margin: 0px;
     background-color: #FFFCF3;
     overflow-x: hidden;
-    max-width: 1920px;
+}
+.width{
+  max-width: 1920px !important;
+}
+
+.widthCenter {
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
 }
 
 

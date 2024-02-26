@@ -19,6 +19,7 @@
     .myImg {
         height: 384px;
         width: 500px;
+        object-fit: cover;
     }
 
     .directionLeft {
@@ -148,6 +149,9 @@
     margin-left: 8%;
 }
 
+.startScreen {
+    height: 100vh;
+}
 
 .position {
     display: flex;
@@ -334,10 +338,12 @@
         justify-content: center;
         padding-top: 10px;
     }
+
     .myImg {
         height: 400px !important;
         width: 450px !important;
     }
+
     .firstFiveSkills {
         flex-direction: column;
 
