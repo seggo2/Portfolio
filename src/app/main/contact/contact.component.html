@@ -1,49 +1,46 @@
 <div class="contactPosition">
     <img class="Rectangle" src="assets/imgs/body/Rectangle 5 (2).svg" alt="">
     <div class="contactMargin">
-        <h1 class="fontSyne">Say Hi!</h1>
+        <h1 class="fontSyne">{{ 'sayHiHeading' | translate }}</h1>
         <div class="postionFormula">
             <div>
-                <h2 class="fontOverpass">Want to discuss a new project?</h2>
-                <p class="fontOverpass">Say hello! let's discuss and make it happen</p>
+                <h2 class="fontOverpass">{{ 'newProjectTitle' | translate }}</h2>
+                <p class="fontOverpass">{{ 'newProjectText' | translate }}</p>
             </div>
 
             <form id="contact" class="formPosition" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                 <div class="box">
                     <input #name="ngModel" minlength="3" [(ngModel)]="contactData.name" name="name" class="formName"
-                        type="text" placeholder="Your name" required>
+                        type="text" placeholder="{{ 'yourNamePlaceholder' | translate }}" required>
                     @if (!name.valid && name.touched) {
-                    <span class="spanMessage , fontSyne">Please enter Name</span>
+                    <span class="spanMessage , fontSyne">{{ 'enterNameMessage' | translate }}</span>
                     }
                 </div>
                 <div  class="box">
                     <input #email="ngModel" minlength="10" [(ngModel)]="contactData.email" name="email"
-                        class="formEmail" type="email" placeholder="Your email" required
+                        class="formEmail" type="email" placeholder="{{ 'yourEmailPlaceholder' | translate }}" required
                         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
 
                     @if (!email.valid && email.touched) {
-                    <span class="spanMessage , fontSyne">Please enter email</span>
+                    <span class="spanMessage , fontSyne">{{ 'enterEmailMessage' | translate }}</span>
                     }
                 </div>
                 <div  class="box">
-                    <textarea #message="ngModel" minlength="10" [(ngModel)]="contactData.message" class="formMessage"
-                        type="text" placeholder="Your message" name="textarea" required></textarea>
+                    <textarea #message="ngModel" minlength="10" [(ngModel)]="contactData.message" class="formMessage , fontSyne"
+                        type="text" placeholder="{{ 'yourMessagePlaceholder' | translate }}" name="textarea" required></textarea>
 
                     @if (!message.valid && message.touched) {
-                    <span class="spanMessage , fontSyne">Please enter Message</span>
+                    <span class="spanMessage , fontSyne">{{ 'enterMessageMessage' | translate }}</span>
                     }
                 </div>
 
                 <label class="checkbox , fontOverpass"><input required type="checkbox" name="checkbox"
-                        (change)="toggleEditable($event)" value="value">I've read the <a (click)="routePrivacy()">Privacy
-                        policy</a> and
-                    agree to the processing of my data
-                    as outlined.</label>
+                        (change)="toggleEditable($event)" value="value"><a (click)="routePrivacy()"> {{ 'privacyPolicy' | translate }}</a> {{ 'privacyPolicyLabel' | translate }}</label>
 
 
-                <span id="terms" class="spanMessage , fontSyne , hide">Please agree Terms</span>
+                <span id="terms" class="spanMessage , fontSyne , hide">{{ 'termsErrorMessage' | translate }}</span>
 
-                <div><button class="formButton">Send message</button> <a href="#tostart"><img class="arrowPosition"
+                <div><button class="formButton">{{ 'sendMessageButton' | translate }}</button> <a href="#tostart"><img class="arrowPosition"
                             src="assets/imgs/body/arrow.svg" alt=""></a></div>
             </form>
 

@@ -275,6 +275,7 @@
     .positionMail {
         padding-top: 50px;
     }
+
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -290,9 +291,9 @@
 
         p {
             font-size: 15px;
-            word-wrap: break-word;
+            word-wrap: break-word !important;
             width: 100%;
-            overflow-wrap: break-word;
+           
         }
     }
 }
@@ -326,6 +327,12 @@
     .aboutmePosition {
         flex-direction: column;
     }
+    .aboutme {
+        p {
+            word-wrap: break-word !important;
+            min-width: 325px;
+        }
+    }
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -339,9 +346,11 @@
         padding-top: 10px;
     }
 
-    .myImg {
-        height: 400px !important;
-        width: 450px !important;
+    .imgContainer {
+        padding-top: 20px;
+        .myImg {
+            object-fit: cover;
+        }
     }
 
     .firstFiveSkills {

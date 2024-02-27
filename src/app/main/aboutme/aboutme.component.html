@@ -1,7 +1,7 @@
 <div>
     <div class="startScreen">
         <div id="tostart" class="position">
-            <h1 class="fontSyne , mainHeadline">Frontend <br>Developer</h1>
+            <h1 class="fontSyne , mainHeadline">Frontend <br> {{ 'mainHeadline' | translate }}</h1>
             <div class="mainSecondHeadlinePosition">
                 <div class="line"></div>
                 <h2 class="mainSecondHeadline , fontOverpass">Sefa Gür</h2>
@@ -12,21 +12,21 @@
             <div class="rotate" ngNonBindable>
                 <p>Sefa_guer&#64;hotmail.com</p>
             </div>
-            <div>
+            <div class="arrowPosition">
                 <div class="animated-arrow" [@bildAnimation]>
                     <img [src]="img[pictureIndex]" />
                 </div>
-                <p id="aboutme">Scroll <br> Down</p>
+                <p id="aboutme">{{ 'scroll' | translate }} <br> {{ 'Down' | translate }}</p>
             </div>
         </div>
     </div>
     <div class="aboutmePosition , hide" (window:scroll)="onScroll($event, 'aboutmePosition')">
         <div class="aboutme">
-            <h1 class="fontSyne">About me</h1>
+            <h1 class="fontSyne">{{ 'aboutMe' | translate }}</h1>
             <p class="fontOverpass">
                 {{ 'introduction' | translate }}
               </p>
-            <a href="#contact"><button class="aboutmeButton">Let's talk</button></a>
+            <a href="#contact"><button class="aboutmeButton">{{ 'letsTalk' | translate }}</button></a>
         </div>
         <div class="imgContainer">
             <img class="myImg" src="assets/imgs/body/small_ohne_background.png" alt="">
@@ -36,7 +36,7 @@
 
     <div class="PositionContainer , hide" (window:scroll)="onScroll($event, 'PositionContainer')">
         <div class="h1Container">
-            <h1 class="fontSyne">My skills</h1>
+            <h1 class="fontSyne"> {{ 'mySkills' | translate }}</h1>
         </div>
         <div class="mySkills , fontOverpass">
             <div class="positionSkills">

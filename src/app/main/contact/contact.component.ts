@@ -2,16 +2,19 @@ import { Component, Inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { TranslateService,TranslateModule} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule,TranslateModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  constructor(private http: HttpClient, private router: Router) { }
+  constructor(private http: HttpClient, private router: Router , public translate: TranslateService) { 
+    this.translate.setDefaultLang('en');
+  }
 
   contentEditable = false;
 

@@ -12,7 +12,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideAnimations(), provideHttpClient(),  provideAnimations(),
+  providers: [provideAnimations(), provideHttpClient(),  provideAnimations(),provideRouter(routes),
     TranslateModule.forRoot({
       defaultLanguage: 'en',
       loader: {

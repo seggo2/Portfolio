@@ -28,3 +28,23 @@
 .headerMenu:hover {
     transform: scale(1.2);
 }
+.allignSwitcher{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    gap: 10px;
+    font-weight: bold;
+    color: gray;
+    p{
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
+.leanguagePosition{
+    position: absolute;
+    right: 30%;
+}
+

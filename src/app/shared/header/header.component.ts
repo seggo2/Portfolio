@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -29,7 +30,7 @@ import { Router } from '@angular/router';
 
 export class HeaderComponent {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router , private translate: TranslateService) { }
 
   img = ['assets/imgs/header/burger menu S3.svg', 'assets/imgs/animations/x header/Property 1=Variant3.svg', 'assets/imgs/animations/x header/Property 1=Transition.svg', 'assets/imgs/animations/x header/Property 1=Variant4.svg', 'assets/imgs/animations/x header/Property 1=Variant5 (1).svg'];
   pictureIndex = 0;
@@ -61,4 +62,7 @@ export class HeaderComponent {
     }, 160);
   }
 
+  switchLanguage(language: string): void {
+    this.translate.use(language);
+  }
 }

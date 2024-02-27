@@ -1,10 +1,11 @@
 import { Component,HostListener } from '@angular/core';
 import { AboutmeComponent } from '../aboutme/aboutme.component';
+import { TranslateService,TranslateModule} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [AboutmeComponent],
+  imports: [AboutmeComponent,TranslateModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
@@ -12,27 +13,30 @@ export class ProjectsComponent {
 
   isHovered: { [key: string]: boolean } = {};
   private isInViewport = false;
-  @HostListener('window:scroll', ['$event'])
-
-
+  
+  
+  constructor(public translate: TranslateService) {
+    this.translate.setDefaultLang('en');
+  }
+  
   onImageHover(value: boolean, projectKey: string): void {
     this.isHovered[projectKey] = value;
   }
-
+  
   Project(indent: string): void {
     const urls: { [key: string]: string } = {
       '3': 'https://sefa-guer.developerakademie.net/Modul%209%20Poke-Wiki/index.html',
       '2': 'https://sefa-guer.developerakademie.net/modul%2011%20game/index.html',
       '1': 'https://sefa-guer.developerakademie.net/components/login/login.html',
     };
-  
+    
     const url = urls[indent];
-  
+    
     if (url) {
       window.open(url, '_blank');
     }
   }
-
+  
   
   gitHub(indent: string): void {
     const urls: { [key: string]: string } = {
@@ -41,14 +45,15 @@ export class ProjectsComponent {
       '2': 'https://github.com/seggo2/pollo-loco',
       '1': 'https://github.com/seggo2/Join',
     };
-  
+    
     const url = urls[indent];
-  
+    
     if (url) {
       window.open(url, '_blank');
     }
   }
   
+  @HostListener('window:scroll', ['$event'])
   onScroll(event: Event, className: string) {
     event.preventDefault();
     if (className !== undefined) {

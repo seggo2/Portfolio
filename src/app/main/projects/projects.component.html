@@ -1,6 +1,6 @@
 <div class="portfolioPosition">
     <h1 class="fontSyne">Portfolio</h1>
-    <p class="fontOverpass">This page is a sample of mywork - please feel free <br> to try them out</p>
+    <p class="fontOverpass">   {{ 'portfolioText' | translate }}</p>
 </div>
 
 <div class="projectsContainer" >
@@ -12,8 +12,7 @@
         <div class="projectsDescription">
             <h2 class="fontSyne , projectsHeading">Join</h2>
             <h3 class="fontSyne , projectsTools">JavaScript | HTML | CSS</h3>
-            <p class="fontOverpass , projectsText">Task manager inspired by the Kanban System. Create and organize tasks
-                using drag and drop functions, assign users and categories.</p>
+            <p class="fontOverpass , projectsText">{{ 'joinDescription' | translate }}</p>
             <div class="buttonContainer "><button (click)="gitHub('1')" class="gitButton">Git hub</button> <button (click)="Project('1')" class="testButton">Live
                     test</button></div>
         </div>
@@ -26,8 +25,7 @@
         <div class="projectsDescription">
             <h2 class="fontSyne , projectsHeading">EL POLLO LOCO</h2>
             <h3 class="fontSyne , projectsTools">JavaScript | HTML | CSS | OOP</h3>
-            <p class="fontOverpass , projectsText">A JavaScript-based, object-oriented jump-and-run game. Help Pepe to
-                rescue his wife from the bad chickens.</p>
+            <p class="fontOverpass , projectsText">{{ 'elPolloLocoDescription' | translate }}</p>
             <div class="buttonContainer "><button (click)="gitHub('2')" class="gitButton">Git hub</button> <button (click)="Project('2')" class="testButton">Live
                     test</button></div>
         </div>
@@ -40,8 +38,7 @@
         <div class="projectsDescription">
             <h2 class="fontSyne , projectsHeading">pokedex</h2>
             <h3 class="fontSyne , projectsTools">JavaScript | HTML | CSS | API</h3>
-            <p class="fontOverpass , projectsText"> Based on the PokéAPI, I have created a simple library that provides
-                and catalogs Pokémon information.</p>
+            <p class="fontOverpass , projectsText"> {{ 'pokedexDescription' | translate }}</p>
             <div class="buttonContainer "><button  (click)="gitHub('3')" class="gitButton">Git hub</button> <button (click)="Project('3')" class="testButton">Live
                     test</button></div>
         </div>
@@ -54,7 +51,7 @@
         <div class="projectsDescription">
             <h2 class="fontSyne , projectsHeading">Portfolio</h2>
             <h3 class="fontSyne , projectsTools">Angular | TypeScript | SCSS</h3>
-            <p class="fontOverpass , projectsText">An Angular-developed portfolio showcasing personal work.</p>
+            <p class="fontOverpass , projectsText">{{ 'portfolioProjectDescription' | translate }}</p>
             <div  class="buttonContainer "><button (click)="gitHub('4')" class="gitButton">Git hub</button></div>
         </div>
     </div>

@@ -1,3 +1,4 @@
+
 <div class="widthCenter">
   <div id="headerButton" class="header">
     <img class="headerLogo" src="assets/imgs/header/logo (1).svg" alt=""><a class="headerMenu"
@@ -6,5 +7,10 @@
         <img [src]="img[pictureIndex]" />
       </div>
     </a>
+    <div class="leanguagePosition">
+      <div class="allignSwitcher">
+        <p class="fontSyne" (click)="switchLanguage('de')">DE</p>|<p class="fontSyne"  (click)="switchLanguage('en')">EN</p>
+      </div>
+    </div>
   </div>
 </div>

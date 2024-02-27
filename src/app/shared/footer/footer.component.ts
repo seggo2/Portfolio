@@ -1,15 +1,19 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService,TranslateModule} from '@ngx-translate/core';
+
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router , public translate: TranslateService) { 
+    this.translate.setDefaultLang('en');
+  }
 
   openLink(key:string){
     if (key=='1') {
