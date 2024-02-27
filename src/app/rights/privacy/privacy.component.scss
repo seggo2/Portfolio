@@ -1,5 +1,5 @@
 .positioning {
-    padding-top: 200px;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     background-color: black;
@@ -7,13 +7,16 @@
 }
 
 .background {
-    margin-left: 200px;
-    margin-right: 200px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    margin-left: 50px;
+    margin-right: 50px;
     font-size: 20px;
     transition: font-size 0.5s ease;
     color: white;
+
+    b {
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+    }
 }
 
 .adress {
@@ -26,6 +29,7 @@ h1 {
     font-size: 40px !important;
     color: blue;
 }
+
 
 h2 {
     transition: font-size 0.5s ease;
@@ -40,31 +44,97 @@ h3 {
 
 @media(max-width:1000px) {
     .background {
-        margin-left: 0px;
+        margin-left: 10px;
         margin-right: 0px;
     }
 }
 
 
-@media(max-width:350px) {
+@media(max-width:620px) {
     .background {
         transition: font-size 0.5s ease;
         font-size: 15px;
     }
-    
-h1 {
-    transition: font-size 0.5s ease;
-    font-size: 25px !important;
-    color: blue;
+
+    h1 {
+        transition: font-size 0.5s ease;
+        font-size: 25px !important;
+        color: blue;
+    }
+
+    h2 {
+        transition: font-size 0.5s ease;
+        font-size: 20px;
+        color: red !important;
+    }
+
+    .adress {
+        transition: font-size 0.5s ease;
+        font-size: 20px !important;
+    }
 }
 
-h2 {
-    transition: font-size 0.5s ease;
-    font-size: 20px;
-    color: red !important;
+
+@media(max-width:500px) {
+    .positioning {
+        padding-top: 100px;
+        flex-direction: column-reverse;
+    }
+
+    .adress {
+        font-size: 18px;
+
+        b {
+            font-size: 18px !important;
+            font-weight: 600;
+        }
+    }
+
+    .background {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    .adress {
+        font-size: 15px;
+    }
 }
-.adress {
-    transition: font-size 0.5s ease;
-    font-size: 20px !important;
-}
+
+
+@media(max-width:390px) {
+    .positioning {
+        padding-top: 100px;
+        flex-direction: column-reverse;
+    }
+
+    .adress {
+        font-size: 18px;
+
+        b {
+            font-size: 12px !important;
+            font-weight: 500;
+        }
+    }
+
+    .background {
+        font-size: 10px;
+        margin-left: 5px; 
+        margin-right: 5px; 
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 12px;
+    }
+
 }
