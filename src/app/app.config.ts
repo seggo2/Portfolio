@@ -10,17 +10,16 @@ export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 
-const translateModuleProvider: Provider = {
-  provide: TranslateLoader,
-  useFactory: HttpLoaderFactory,
-  deps: [HttpClient]
-};
 
 export const appConfig: ApplicationConfig = {
-  providers: [
-    provideRouter(routes),
-    provideHttpClient(),
-    provideAnimations(),
-    translateModuleProvider,
-  ],
+  providers: [provideAnimations(), provideHttpClient(),  provideAnimations(),
+    TranslateModule.forRoot({
+      defaultLanguage: 'en',
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    }).providers!]
 };
+

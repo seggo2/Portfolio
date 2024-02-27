@@ -1,12 +1,12 @@
 import { Component, HostListener , OnInit ,} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { trigger, state, style, animate, transition } from '@angular/animations';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService,TranslateModule} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-aboutme',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,TranslateModule],
   templateUrl: './aboutme.component.html',
   styleUrls: ['./aboutme.component.scss'], 
   animations: [
@@ -28,7 +28,7 @@ import { TranslateService } from '@ngx-translate/core';
 
 export class AboutmeComponent implements OnInit {
   
-  constructor(private translate: TranslateService) {
+  constructor(public translate: TranslateService) {
     this.translate.setDefaultLang('en');
   }
 
