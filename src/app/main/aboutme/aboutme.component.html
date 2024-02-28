@@ -30,12 +30,12 @@
             <a href="#contact"><button class="aboutmeButton">{{ 'letsTalk' | translate }}</button></a>
         </div>
         <div  class="imgContainer">
-            <img id="skills" class="myImg" src="assets/imgs/body/small_ohne_background.png" alt="">
+            <img  class="myImg" src="assets/imgs/body/small_ohne_background.png" alt="">
             <img   class="directionLeft" src="assets/imgs/body/pfeilLinks.svg" alt="">
         </div>
     </div>
-
-    <div  class="PositionContainer , hide" (window:scroll)="onScroll($event, 'PositionContainer')">
+<div  id="skills" class="placeholderSkills"></div>
+    <div class="PositionContainer , hide" (window:scroll)="onScroll($event, 'PositionContainer')">
         <div class="h1Container">
             <h1 class="fontSyne"> {{ 'mySkills' | translate }}</h1>
         </div>
