@@ -16,11 +16,12 @@
                 <div class="animated-arrow" [@bildAnimation]>
                     <img [src]="img[pictureIndex]" />
                 </div>
-                <p id="aboutme">{{ 'scroll' | translate }} <br> {{ 'Down' | translate }}</p>
+                <p>{{ 'scroll' | translate }} <br> {{ 'Down' | translate }}</p>
             </div>
         </div>
     </div>
-    <div class="aboutmePosition , hide" (window:scroll)="onScroll($event, 'aboutmePosition')">
+    <div id="aboutme" class="headerSim"></div>
+    <div   class="aboutmePosition , hide" (window:scroll)="onScroll($event, 'aboutmePosition')">
         <div class="aboutme">
             <h1 class="fontSyne">{{ 'aboutMe' | translate }}</h1>
             <p class="fontOverpass">
