@@ -293,7 +293,7 @@
             font-size: 15px;
             word-wrap: break-word !important;
             width: 100%;
-           
+
         }
     }
 }
@@ -327,6 +327,7 @@
     .aboutmePosition {
         flex-direction: column;
     }
+
     .aboutme {
         p {
             word-wrap: break-word !important;
@@ -337,9 +338,24 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////
 /// /// ////////////////////////////////skills querry/////////////////////////////////////////
+@media(max-width:900px) {
+    .h1Container {
+        width: 300px;
+        margin-bottom: -30px;
+
+        h1 {
+            font-size: 40px;
+        }
+    }
+}
 
 
 @media(max-width:600px) {
+
+    .PositionContainer {
+        padding-top: 40px;
+    }
+
     .positionSkills {
         flex-direction: row;
         justify-content: center;
@@ -348,6 +364,7 @@
 
     .imgContainer {
         padding-top: 20px;
+
         .myImg {
             object-fit: cover;
         }
