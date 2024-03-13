@@ -11,7 +11,7 @@
     "joinDescription": "Task-Manager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
     "elPolloLocoDescription": "Ein auf JavaScript basierendes, objektorientiertes Jump-and-Run-Spiel. Helfen Sie Pepe, seine Frau vor den bösen Hühnern zu retten.",
     "pokedexDescription": "Basierend auf der PokéAPI habe ich eine einfache Bibliothek erstellt, die Informationen zu Pokémon bereitstellt und katalogisiert.",
-    "portfolioProjectDescription": "Ein mit Angular entwickeltes Portfolio, das persönliche Arbeiten präsentiert.",
+    "portfolioProjectDescription": "A CRM system developed with Angular that manages internal information for companies.",
     "sayHiHeading": "Sag Hallo!",
     "newProjectTitle": "Möchten Sie ein neues Projekt besprechen?",
     "newProjectText": "Sagen Sie hallo! Lassen Sie uns darüber sprechen und es umsetzen.",

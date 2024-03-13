@@ -25,6 +25,7 @@ export class ProjectsComponent {
   
   Project(indent: string): void {
     const urls: { [key: string]: string } = {
+      '4': 'https://sefa-guer.developerakademie.net/angular-projects/simple/index.html',
       '3': 'https://sefa-guer.developerakademie.net/Modul%209%20Poke-Wiki/index.html',
       '2': 'https://sefa-guer.developerakademie.net/modul%2011%20game/index.html',
       '1': 'https://sefa-guer.developerakademie.net/components/login/login.html',
