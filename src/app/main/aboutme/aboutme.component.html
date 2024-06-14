@@ -1,7 +1,7 @@
 <div>
     <div class="startScreen">
         <div id="tostart" class="position">
-            <h1 class="fontSyne , mainHeadline">Frontend <br> {{ 'mainHeadline' | translate }}</h1>
+            <h1 class="fontSyne , mainHeadline">Full-stack <br> {{ 'mainHeadline' | translate }}</h1>
             <div class="mainSecondHeadlinePosition">
                 <div class="line"></div>
                 <h2 class="mainSecondHeadline , fontOverpass">Sefa Gür</h2>
@@ -34,56 +34,118 @@
             <img   class="directionLeft" src="assets/imgs/body/pfeilLinks.svg" alt="">
         </div>
     </div>
-<div  id="skills" class="placeholderSkills"></div>
-    <div class="PositionContainer , hide" (window:scroll)="onScroll($event, 'PositionContainer')">
+    <div class="PositionContainer" (window:scroll)="onScroll($event, 'PositionContainer')">
         <div class="h1Container">
-            <h1 class="fontSyne"> {{ 'mySkills' | translate }}</h1>
+            <h1 class="fontSyne">{{ 'mySkills' | translate }}</h1>
         </div>
-        <div class="mySkills , fontOverpass">
-            <div class="positionSkills">
-                <div class="firstFiveSkills">
-                    <div>
-                        <img src="assets/imgs/body/Angular.svg" alt="">
-                        <p>Angular</p>
+        <div class="tab-container">
+            <div id="frontendSkills" class="mySkills fontOverpass">
+                <div class="positionSkills">
+                    <div class="firstFiveSkills">
+                        <div>
+                            <img src="assets/imgs/body/Angular.svg" alt="">
+                            <p>Angular</p>
+                        </div>
+                        <div>
+                            <img src="assets/imgs/body/typscript.svg" alt="">
+                            <p>TypeScript</p>
+                        </div>
+                        <div>
+                            <img src="assets/imgs/body/Javascript.svg" alt="">
+                            <p>JavaScript</p>
+                        </div>
+                        <div>
+                            <img src="assets/imgs/body/html.svg" alt="">
+                            <p>HTML</p>
+                        </div>
+                        <div>
+                            <img src="assets/imgs/body/css.svg" alt="">
+                            <p>CSS</p>
+                        </div>
                     </div>
-                    <div>
-                        <img src="assets/imgs/body/typscript.svg" alt="">
-                        <p>TypeScript</p>
-                    </div>
-                    <div>
-                        <img src="assets/imgs/body/Javascript.svg" alt="">
-                        <p>JavaScript</p>
-                    </div>
-                    <div>
-                        <img src="assets/imgs/body/html.svg" alt="">
-                        <p>HTML</p>
-                    </div>
-                    <div>
-                        <img src="assets/imgs/body/css.svg" alt="">
-                        <p>CSS</p>
+                    <div class="secondFiveSkills">
+                        <div>
+                            <img src="assets/imgs/body/Firebase.svg" alt="">
+                            <p>Firebase</p>
+                        </div>
+                        <div>
+                            <img src="assets/imgs/body/git.svg" alt="">
+                            <p>Git</p>
+                        </div>
+                        <div>
+                            <img src="assets/imgs/body/scrum.svg" alt="">
+                            <p>Scrum</p>
+                        </div>
+                        <div>
+                            <img src="assets/imgs/body/Api.svg" alt="">
+                            <p>Rest-Api</p>
+                        </div>
+                        <div>
+                            <img src="assets/imgs/body/materialDesign.svg" alt="">
+                            <p>Material <br> Design</p>
+                        </div>
                     </div>
                 </div>
-                <div class="secondFiveSkills">
-                    <div>
-                        <img src="assets/imgs/body/Firebase.svg" alt="">
-                        <p>Firebase</p>
+            </div>
+    
+            <div id="backendSkills" class="mySkills fontOverpass hide">
+                <div class="positionSkills">
+                    <div class="firstFiveSkills">
+                        
+                        <div>
+                            <img src="assets/imgs/body/Python.svg" alt="">
+                            <p>Python</p>
+                        </div>
+                        <div>
+                            <img src="assets/imgs/body/Django.svg" alt="">
+                            <p>Django</p>
+                        </div>
+                        <div>
+                            <img src="assets/imgs/body/PostgreSQL.svg" alt="">
+                            <p>PostgreSQL</p>
+                        </div>
+                        <div>
+                            <img src="assets/imgs/body/Linux.svg" alt="">
+                            <p>Linux</p>
+                        </div>
+                        <div>
+                            <img src="assets/imgs/body/SQL.svg" alt="">
+                            <p>SQL</p>
+                        </div>
                     </div>
-                    <div> <img src="assets/imgs/body/git.svg" alt="">
-                        <p>Git</p>
-                    </div>
-                    <div> <img src="assets/imgs/body/scrum.svg" alt="">
-                        <p>Scrum</p>
-                    </div>
-                    <div> <img src="assets/imgs/body/Api.svg" alt="">
-                        <p>Rest-Api</p>
-                    </div>
-                    <div> <img src="assets/imgs/body/materialDesign.svg" alt="">
-                        <p>Material <br> Design</p>
+                    <div class="secondFiveSkills">
+                       
+                        <div>
+                            <img src="assets/imgs/body/Redis.svg" alt="">
+                            <p>Redis</p>
+                        </div>
+                        <div>
+                            <img src="assets/imgs/body/Docker.svg" alt="">
+                            <p>Docker</p>
+                        </div>
+                        <div>
+                            <img src="assets/imgs/body/Cloud.svg" alt="">
+                            <p>Cloud</p>
+                        </div>
+                        <div>
+                            <img src="assets/imgs/body/Heroku.svg" alt="">
+                            <p>Heroku</p>
+                        </div>
+                        <div>
+                            <img src="assets/imgs/body/Terminal.svg" alt="">
+                            <p>Terminal</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="tab-navigation">
+            <span class="tab-dot" (click)="showTab('frontendSkills')"></span>
+            <span class="tab-dot" (click)="showTab('backendSkills')"></span>
+        </div>
     </div>
+    
+    
 
     <div class="directionRight">
         <img src="assets/imgs/body/Pfeilrechts.svg" alt="">

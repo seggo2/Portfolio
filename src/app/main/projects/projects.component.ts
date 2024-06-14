@@ -25,6 +25,7 @@ export class ProjectsComponent {
   
   Project(indent: string): void {
     const urls: { [key: string]: string } = {
+      '5': 'https://sefa-guer.developerakademie.net/angular-projects/videoflix/login',
       '4': 'https://sefa-guer.developerakademie.net/angular-projects/simple/index.html',
       '3': 'https://sefa-guer.developerakademie.net/Modul%209%20Poke-Wiki/index.html',
       '2': 'https://sefa-guer.developerakademie.net/modul%2011%20game/index.html',
@@ -41,6 +42,8 @@ export class ProjectsComponent {
   
   gitHub(indent: string): void {
     const urls: { [key: string]: string } = {
+      '6': 'https://github.com/seggo2/videoflix-backend',
+      '5': 'https://github.com/seggo2/videoflix_Frontend',
       '4': 'https://github.com/seggo2/Portfolio',
       '3': 'https://github.com/seggo2/Pokedex',
       '2': 'https://github.com/seggo2/pollo-loco',

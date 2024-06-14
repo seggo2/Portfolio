@@ -41,6 +41,32 @@ export class AboutmeComponent implements OnInit {
 
   ngOnInit(): void {
     this.starteAnimation();
+    this.showTab('frontendSkills');
+  }
+
+  showTab(tabId: string) {
+    const tabs = document.querySelectorAll('.tab-container > div');
+    tabs.forEach((tab) => {
+      tab.classList.remove('active');
+      tab.classList.add('hide');
+    });
+
+    const selectedTab = document.getElementById(tabId);
+    if (selectedTab) {
+      selectedTab.classList.add('active');
+      selectedTab.classList.remove('hide');
+    }
+
+    const dots = document.querySelectorAll('.tab-dot');
+    dots.forEach((dot) => {
+      dot.classList.remove('active');
+    });
+
+    if (tabId === 'frontendSkills' && dots[0]) {
+      dots[0].classList.add('active');
+    } else if (tabId === 'backendSkills' && dots[1]) {
+      dots[1].classList.add('active');
+    }
   }
 
   starteAnimation() {

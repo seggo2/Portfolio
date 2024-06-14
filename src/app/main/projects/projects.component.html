@@ -19,6 +19,18 @@
                     test</button></div>
         </div>
     </div>
+    <div class="project5 , hiddenX" (window:scroll)="onScroll($event, 'project5')">
+        <div (mouseover)="onImageHover(true, 'project4')" (mouseout)="onImageHover(false, 'project4')">
+            <img [src]="isHovered['project4'] ? 'assets/imgs/projects/videoflix(2).png' : 'assets/imgs/projects/videoflix(1).png'"
+                alt="">
+        </div>
+        <div class="projectsDescription">
+            <h2 class="fontSyne , projectsHeading">Videoflix</h2>
+            <h3 class="fontSyne , projectsTools">Python | TypeScript | Angular | Django</h3>
+            <p class="fontOverpass , projectsText">{{ 'VideoflixDescription' | translate }}</p>
+            <div class="buttonContainer "><button  (click)="gitHub('5')" class="gitButton">Git hub <br>Frontend</button> <button  (click)="gitHub('6')" class="gitButton">Git hub<br>Backend</button><button (click)="Project('5')" class="testButton">Livetest</button></div>
+        </div>
+    </div>
     <div class="project2 , hiddenX" (window:scroll)="onScroll($event, 'project2')">
         <div (mouseover)="onImageHover(true, 'project2')" (mouseout)="onImageHover(false, 'project2')">
             <img [src]="isHovered['project2'] ? 'assets/imgs/projects/polloIngame.png' : 'assets/imgs/projects/polloFrame.png'"
@@ -56,6 +68,7 @@
             <div class="buttonContainer "><button  (click)="gitHub('4')" class="gitButton">Git hub</button> <button (click)="Project('4')" class="testButton">Livetest</button></div>
         </div>
     </div>
+    
 </div>
 <div class="directionLeft">
 <img  class="directionLeftImg" src="assets/imgs/body/pfeilLinks.svg" alt="">

@@ -3,7 +3,7 @@
     "scroll": "Scroll",
     "Down": "Down",
     "aboutMe": "About me",
-    "introduction": "My name is Sefa Gür Im a Junior Frontend Developer from Germany, I leverage my extensive experience in machine programming to bring a wealth of problem-solving skills and logical thinking to the world of Development. I apply my expertise to create innovative and efficient solutions in development, showcasing a seamless blend of technical proficiency and creative problem-solving.",
+    "introduction": "My name is Sefa Gür Im a Junior Full-stack Developer from Germany, I leverage my extensive experience in machine programming to bring a wealth of problem-solving skills and logical thinking to the world of Development. I apply my expertise to create innovative and efficient solutions in development, showcasing a seamless blend of technical proficiency and creative problem-solving.",
     "letsTalk": "Let's talk",
     "mySkills": "My skills",
     "portfolioText": "This page is a sample of my work - please feel free to try them out",
@@ -47,5 +47,7 @@
     "privacyPolicyChangeInfo": "We reserve the right to adapt this data protection declaration so that it always corresponds to the current legal requirements or to implement changes to our services in the data protection declaration, e.g., when introducing new services. The new data protection declaration will then apply to your next visit.",
     "questionsToDPO": "Questions to the data protection officer",
     "dataProtectionQuestions": "If you have any questions about data protection, please send us an email or contact the person responsible for data protection in our organization directly:The data protection declaration was created with the help of activeMind AG, the experts for external data protection officers (Version #2020-09-30).",
-    "legalnotice": "Legalnotice"
+    "legalnotice": "Legalnotice",
+    "VideoflixDescription":"Videoflix is a web project I developed as a tribute to Netflix. It offers a platform for uploading, managing, and playing videos."
+
 }

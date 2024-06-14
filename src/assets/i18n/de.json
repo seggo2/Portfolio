@@ -1,5 +1,5 @@
 {
-    "introduction": "Mein name ist Sefa Gür ich bin Junior Frontend Entwickler aus Deutschland, ich nutze meine umfangreiche Erfahrung in der Maschinenprogrammierung, um ein breites Spektrum an Problemlösungsfähigkeiten und logischem Denken in die Welt der Entwicklung zu bringen. Ich wende meine Expertise an, um innovative und effiziente Lösungen in der Entwicklung zu schaffen, und zeige dabei eine nahtlose Mischung aus technischer Kompetenz und kreativer Problemlösung.",
+    "introduction": "Mein name ist Sefa Gür ich bin Junior Full-stack Entwickler aus Deutschland, ich nutze meine umfangreiche Erfahrung in der Maschinenprogrammierung, um ein breites Spektrum an Problemlösungsfähigkeiten und logischem Denken in die Welt der Entwicklung zu bringen. Ich wende meine Expertise an, um innovative und effiziente Lösungen in der Entwicklung zu schaffen, und zeige dabei eine nahtlose Mischung aus technischer Kompetenz und kreativer Problemlösung.",
     "mainHeadline": "Entwickler",
     "secondHeadline": "Sefa Gür",
     "scroll": "Scroll",
@@ -48,5 +48,6 @@
     "privacyPolicyChangeInfo": "Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Die neue Datenschutzerklärung gilt dann für Ihren nächsten Besuch.",
     "questionsToDPO": "Fragen an den Datenschutzbeauftragten",
     "dataProtectionQuestions": "Wenn Sie Fragen zum Datenschutz haben, senden Sie uns bitte eine E-Mail oder kontaktieren Sie direkt die verantwortliche Person für Datenschutz in unserer Organisation:Die Datenschutzerklärung wurde mit Unterstützung von activeMind AG, den Experten für externe Datenschutzbeauftragte (Version #2020-09-30), erstellt.",
-    "legalnotice": "Impressum"
+    "legalnotice": "Impressum",
+    "VideoflixDescription":"Videoflix ist ein Webprojekt, das ich als anlehnung an Netflix entwickelt habe. Es bietet eine Plattform zum Hochladen, Verwalten und Abspielen von Videos."
 }
