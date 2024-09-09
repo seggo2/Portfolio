@@ -317,80 +317,6 @@
         }
     }
 
-    .project3 {
-        margin-left: 6%;
-        img {
-            width: 320px;
-            height: 193px;
-        }
-
-        .projectsHeading {
-            transition: font-size 0.5s ease;
-            font-size: 25px;
-        }
-
-        .projectsTools {
-            transition: font-size 0.5s ease;
-            font-size: 20px;
-        }
-
-        .projectsText {
-            width: 100%;
-            transition: font-size 0.5s ease;
-            font-size: 20px;
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-        }
-
-        .gitButton {
-            width: 120px;
-            height: 40px;
-            font-size: 15px;
-        }
-
-        .testButton {
-            width: 120px;
-            height: 40px;
-            font-size: 15px;
-        }
-    }
-
-    .project4 {
-        margin-left: 6%;
-        img {
-            width: 320px;
-            height: 193px;
-        }
-
-        .projectsHeading {
-            transition: font-size 0.5s ease;
-            font-size: 25px;
-        }
-
-        .projectsTools {
-            transition: font-size 0.5s ease;
-            font-size: 20px;
-        }
-
-        .projectsText {
-            width: 100%;
-            transition: font-size 0.5s ease;
-            font-size: 20px;
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-        }
-
-        .gitButton {
-            width: 120px;
-            height: 40px;
-            font-size: 17px;
-        }
-        .testButton {
-            width: 120px;
-            height: 40px;
-            font-size: 15px;
-        }
-    }
 
     .project5 {
         margin-left: 6%;
@@ -439,13 +365,7 @@
         flex-direction: column;
     }
 
-    .project3 {
-        flex-direction: column;
-    }
 
-    .project4 {
-        flex-direction: column;
-    }
     .project5 {
         flex-direction: column;
     }
